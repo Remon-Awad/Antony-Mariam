@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Antony &amp; Mariam | Wedding Invitation</title>
+    <meta name="author" content="Remon Awad">
+    <meta name="theme-color" content="#0e1224">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Cinzel+Decorative:wght@700;900&family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- Made with all my love by Remon ♥ -->
+<body class="is-loading" data-a="A" data-b="M" data-n1="Antony" data-n2="Mariam" data-date="2026-10-29T21:00:00+03:00">
+
+    <div id="wpre">
+        <main class="envelope" id="envelope" aria-label="Invitation envelope">
+            <div class="paper"></div>
+            <div class="flap" id="flap"><div class="flap__edge"></div>
+                <div class="flap__shape">
+                    <h1 class="flap__names"><span id="n1"></span><i>&amp;</i><span id="n2"></span></h1>
+                </div>
+            </div>
+            <canvas class="ribbon" id="ribbon" aria-hidden="true"></canvas>
+            <button class="pull" id="open" type="button" aria-label="Pull the ribbon to open the invitation">Pull the ribbon</button>
+        </main>
+    </div>
+
+    <div class="thread" id="thread">
+      <i class="thread__fill" aria-hidden="true"></i><i class="thread__tip" aria-hidden="true"></i>
+      <button class="thread__bowbtn" id="bowBtn" type="button" aria-label="Celebrate">
+        <svg class="thread__bow" viewBox="0 0 40 32" aria-hidden="true">
+          <defs>
+            <linearGradient id="gb" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#f6e9be"/>
+              <stop offset=".55" stop-color="#cfae66"/>
+              <stop offset="1" stop-color="#8a6a2c"/>
+            </linearGradient>
+          </defs>
+          <path d="M20 12C13 1 2 3 3 11c1 7 12 6 17 1z" fill="url(#gb)"/>
+          <path d="M20 12C27 1 38 3 37 11c-1 7-12 6-17 1z" fill="url(#gb)"/>
+          <path d="M19 14l-6 16 6-3 1 4V14zM21 14l6 16-6-3-1 4V14z" fill="url(#gb)"/>
+          <rect x="17.5" y="9.5" width="5" height="7" rx="2" fill="#f1dfae"/>
+        </svg>
+      </button>
+    </div>
+    <canvas class="fw" id="fw" aria-hidden="true"></canvas>
+
+    <div id="root"></div>
+
+    <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.24.7/babel.min.js"></script>
+    <script src="script.js"></script>
+    <script type="text/babel" src="app.jsx"></script>
+</body>
+
+</html>
